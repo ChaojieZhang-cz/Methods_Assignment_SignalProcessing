@@ -26,7 +26,7 @@ plotlist=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] ###
 ## Insert Comments ## (1)
 '''
 plotlist should be from 1 to 16, there are 16 plots in total.
-Numbers in plotlist are the lables of figures, each number correspond to a output figure.
+Numbers in plotlist are the lables of figures, each number correspond to an output figure.
 '''
 ##
 
@@ -60,7 +60,7 @@ for filename in os.listdir(dir):
 
 		## Insert Comments ## (2)
 		'''
-		dfs is a dictionary to store the signal information from all txt files
+		dfs is a dictionary to store the signal information from all txt files.
 		'''
 		##
 
@@ -495,17 +495,26 @@ for filename in os.listdir(dir):
 		## Insert Comments  ## (10)
 		## Generally speaking, how does this block of code differ from the code block ##
 		## that plots the first figure
-
-
-
-
-
+		'''
+		In this block, we use the signal information in the output text file, to plot different lines in the original signal.
+		This block is different becauese it doesn't close the figure file till all plots are generated. 
+		It means all the new lines ploted in each step, will directly added to previous plot.
 		
-
-
-
-
-
+		1.	darkblue point: the peak signal point
+		
+		2.	darkblue line: peak width
+			the signal part above the darkblue line is regarded as 'peak'
+			the height of the darkblue line = peak_width_threshold*(height-bgr)+bgr
+			peak_width_threshold = 0.25
+			height = peak_height, the intensity of the max point
+			bgr = local_bgr, the average intensity of the two min points close to 'peak'
+			
+		3.	gray line: bgr (= local_bgr)
+			bgr is the average intensity of the two min points close to 'peak'
+			
+		4.	black line: avg 
+			avg is the average intensity of the 'peak'
+		'''
 		##
 		
 
@@ -520,4 +529,3 @@ for filename in os.listdir(dir):
 # In another text file or below comment on the signal of MYC in each of these cell lines (4-7 sentences).
 # Would you expect the signals to differ across the three cell lines?
 # How might various window sizes thresholds effect peak calling in this setting?
-
