@@ -1,0 +1,97 @@
+HepG2
+
+HepG2_Peak1
+peak position:  460
+peak range:  155
+peak height:  3.51724137931034
+peak average:  2.2200002763041575
+signal to noise:  1.494916231609984
+
+HepG2_Peak2
+peak position:  5920
+peak range:  238
+peak height:  2.9127155172413794
+peak average:  1.393197229836964
+signal to noise:  1.830876470249571
+
+There are two peaks in HepG2.
+The peak heights are small, the signals are not very obvious in the noise. 
+The peak ranges are about 200, similar to other peak signals.
+
+
+K562
+
+K562_Peak1
+peak position:  449
+peak range:  208
+peak height:  6.19137645107794
+peak average:  3.9091226483213877
+signal to noise:  4.906015091566854
+
+K562_Peak1
+peak position:  5967
+peak range:  63
+peak height:  1.50878938640133
+peak average:  1.029208126036484
+signal to noise:  1.398039330381475
+
+There are two peaks in K562.
+One of the peak is relatively thin with 63 peak range.
+The peak heights are small, the signals are not very obvious in the noise. 
+
+
+MCF-7
+
+MCF-7_Peak1
+peak position:  141
+peak range:  225
+peak height:  72.35428571428571
+peak average:  50.786396965866004
+signal to noise:  26.033293476696283
+
+MCF-7_Peak2
+peak position:  424
+peak range:  213
+peak height:  47.67428571428571
+peak average:  38.13530040053404
+signal to noise:  10.772619294529814
+
+MCF-7_Peak3
+peak position:  737
+peak range:  179
+peak height:  53.765714285714296
+peak average:  40.69669841269841
+signal to noise:  16.38737725738643
+
+MCF-7_Peak4
+peak position:  956
+peak range:  53
+peak height:  3.7885714285714305
+peak average:  2.677989417989418
+signal to noise:  1.3246687580705894
+
+MCF-7_Peak5
+peak position:  1684
+peak range:  63
+peak height:  3.51428571428571
+peak average:  2.277232142857142
+signal to noise:  1.3951018214133215
+
+MCF-7_Peak6
+peak position:  5877
+peak range:  187
+peak height:  41.1485714285714
+peak average:  23.184133738601798
+signal to noise:  13.533003886619488
+
+There are 6 peaks in MCF-7. 
+Some noise peak may be included, or some small peak signals were ignored.
+Peak1,2,3,6: The peak heights are specially large here, and the signals are more obvious compared to the noise. Their ranges are large.
+Peak4,5: The peak heights are not large, and the signals are not very obvious in the noise. Their ranges are small.
+
+
+
+In general, the signals are different in different cell lines.
+Larger window size can remove the noise peak effectively, but it will also deform the original signals. It may even miss some small peak signals.
+Smaller window size will not change the original signals too much, it can get the peak information more precisely. But it can't remove the noise peak effectively.
+
