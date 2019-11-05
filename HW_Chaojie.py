@@ -213,7 +213,8 @@ for filename in os.listdir(dir):
 
 			## Insert Comments ## (10)
 			'''
-			Redefine the rmsd_level from the 'noise part'
+			Redefine the rmsd_level from the 'noise part'.
+			Calculate the RMSD mean and RMSD standard deviation in the 'noise part' to get the new rmsd_level value.
 			'''
 			##
 
